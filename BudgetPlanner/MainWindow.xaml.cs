@@ -24,5 +24,10 @@ namespace BudgetPlanner
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

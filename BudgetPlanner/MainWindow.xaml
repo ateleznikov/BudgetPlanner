@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BudgetPlanner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Budget Planner" Height="450" Width="800">
     <Grid>
+        <Label Content="Income" HorizontalAlignment="Left" Margin="39,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Expenses" HorizontalAlignment="Left" Margin="289,38,0,0" VerticalAlignment="Top"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="39,73,566,168"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="289,73,316,168"/>
+        <Label Content="Total Income" HorizontalAlignment="Left" Margin="39,285,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="185,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49"/>
+        <Label Content="Current Balance" HorizontalAlignment="Left" Margin="39,316,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="185,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49"/>
+        <Label Content="Total Outgoing" HorizontalAlignment="Left" Margin="289,285,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49"/>
+        <Label Content="Search
+" HorizontalAlignment="Left" Margin="39,376,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="93,380,0,0" TextWrapping="Wrap" Text="
+" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="596,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="596,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Amount" HorizontalAlignment="Left" Margin="596,135,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="671,104,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="670,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="670,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <RadioButton Content="Income" HorizontalAlignment="Left" Margin="596,194,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Expense" HorizontalAlignment="Left" Margin="705,194,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Rcurring" HorizontalAlignment="Left" Margin="596,233,0,0" VerticalAlignment="Top"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="615,288,0,0" VerticalAlignment="Top"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="697,288,0,0" VerticalAlignment="Top" Width="50"/>
 
     </Grid>
 </Window>
